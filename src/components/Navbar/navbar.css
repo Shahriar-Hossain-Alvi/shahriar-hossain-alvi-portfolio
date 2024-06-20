@@ -1,0 +1,40 @@
+#navbar a{
+    background-color: transparent;
+    color: #111111;
+    position: relative;
+}
+
+#navbar a:hover{
+    color: #f8a305;
+}
+
+#navbar a:after{
+    width: 0;
+    height: 1px;
+    background-color: #111111;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+}
+#navbar a:hover:after{
+    width: 70%;
+    bottom: 0;
+    left: 0;
+    background-color: #f8a305;
+    transition: linear 0.1s;
+}
+
+#navbar a.active{
+    background-color: transparent;
+    color: #111111;
+}
+#navbar a.active::after{
+    width: 70%;
+    height: 1px;
+    background-color: #111111;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+}
