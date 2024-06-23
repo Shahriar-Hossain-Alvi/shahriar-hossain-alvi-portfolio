@@ -5,7 +5,7 @@ import { Element } from 'react-scroll';
 
 const About = () => {
     return (
-        <Element id="about" className="mb-24">
+        <Element id="about" className="mb-24 container mx-auto">
             <SectionTitle title={'About Me'}></SectionTitle>
 
             <div className="grid grid-cols-2 gap-10 items-center">

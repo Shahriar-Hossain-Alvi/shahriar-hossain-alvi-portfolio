@@ -5,6 +5,8 @@ import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
 import 'animate.css';
 import Qualification from "./Qualification/Qualification";
+import Portfolio from "./Portfolio/Portfolio";
+import Skills from "./Skills/Skills";
 
 
 const Home = () => {
@@ -38,6 +40,8 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Qualification></Qualification>
+            <Portfolio></Portfolio>
+            <Skills></Skills>
         </div>
     );
 };
