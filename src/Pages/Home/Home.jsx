@@ -7,6 +7,7 @@ import 'animate.css';
 import Qualification from "./Qualification/Qualification";
 import Portfolio from "./Portfolio/Portfolio";
 import Skills from "./Skills/Skills";
+import Contact from "./Contact/Contact";
 
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
             <Qualification></Qualification>
             <Portfolio></Portfolio>
             <Skills></Skills>
+            <Contact></Contact>
         </div>
     );
 };

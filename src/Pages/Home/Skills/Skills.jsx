@@ -1,8 +1,8 @@
 import { FaCss3Alt, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa6';
 import SectionTitle from '../../../components/Shared/SectionTitle/SectionTitle';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiMongodb } from 'react-icons/si';
-import { RiFirebaseFill } from 'react-icons/ri';
+import { SiMongodb, SiReactrouter } from 'react-icons/si';
+import { RiFirebaseFill, RiTailwindCssFill } from 'react-icons/ri';
 
 const Skills = () => {
     return (
@@ -40,7 +40,15 @@ const Skills = () => {
                 </button>
 
                 <button className="btn hover:bg-black lg:btn-lg bg-black text-[#ffcd33]">
-                    <RiFirebaseFill className='' /> Firebase
+                    <RiFirebaseFill className='text-xl' /> Firebase
+                </button>
+
+                <button className="btn hover:bg-[#1d2434] lg:btn-lg bg-[#1d2434] text-[#38bdf8]">
+                    <RiTailwindCssFill className='text-xl' /> Tailwind
+                </button>
+
+                <button className="btn hover:bg-[#1d2434] lg:btn-lg bg-[#080808] text-white">
+                    <SiReactrouter className='text-xl text-[#d10a22]' /> React Router
                 </button>
             </div>
         </div>

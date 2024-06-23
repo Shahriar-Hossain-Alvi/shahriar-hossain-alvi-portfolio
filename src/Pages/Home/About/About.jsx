@@ -5,12 +5,12 @@ import { Element } from 'react-scroll';
 
 const About = () => {
     return (
-        <Element id="about" className="mb-24 container mx-auto">
+        <Element id="about" className="mb-24 mx-2">
             <SectionTitle title={'About Me'}></SectionTitle>
 
-            <div className="grid grid-cols-2 gap-10 items-center">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
                 <div className="flex justify-end w-full">
-                    <img className="rounded-bl-[250px] max-h-[500px] pb-1 pl-1 border-b-2 border-[#555555]" src={aboutImage} alt="about image" />
+                    <img className="rounded-b-[250px] md:rounded-bl-[250px] max-h-[500px] pb-1 pl-1 border-b-2 border-[#555555]" src={aboutImage} alt="about image" />
                 </div>
 
                 <div className="w-full">
@@ -32,15 +32,9 @@ const About = () => {
                         </tr>
                         <tr className="h-3"></tr>
                         <tr>
-                            <td className="font-semibold">Email</td>
+                            <td className="font-semibold">Location</td>
                             <td className="font-semibold">:</td>
-                            <td className="font-semibold">shahriarhossainalvi@gmail.com</td>
-                        </tr>
-                        <tr className="h-3"></tr>
-                        <tr>
-                            <td className="font-semibold">Phone</td>
-                            <td className="font-semibold">:</td>
-                            <td className="font-semibold">+8801630989742</td>
+                            <td className="font-semibold">Dhaka</td>
                         </tr>
                     </table>
 
