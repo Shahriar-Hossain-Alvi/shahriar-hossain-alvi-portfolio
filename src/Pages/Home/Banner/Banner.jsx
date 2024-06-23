@@ -6,7 +6,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 const Banner = () => {
     return (
-        <div id="banner" className="relative hero  mb-[700px]" style={{ backgroundImage: `url(${bannerBG})` }}>
+        <div id="banner" className="relative hero mb-48" style={{ backgroundImage: `url(${bannerBG})` }}>
             <div className="hero-content text-center pt-20 pb-12">
                 <div className="pb-8">
                     <h2 className="font-semibold text-xl lg:text-2xl text-[#111111]">Hi! I am</h2>

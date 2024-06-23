@@ -5,7 +5,7 @@ import { Element } from 'react-scroll';
 
 const About = () => {
     return (
-        <Element id="about" className="mb-96">
+        <Element id="about" className="mb-24">
             <SectionTitle title={'About Me'}></SectionTitle>
 
             <div className="grid grid-cols-2 gap-10 items-center">
@@ -14,9 +14,9 @@ const About = () => {
                 </div>
 
                 <div className="w-full">
-                    <p className="font-open-sans text-sm text-[#828282] mb-3">Hello! I'm a passionate and dedicated Front-End Web Developer with a comprehensive skill set in creating dynamic and user-friendly web applications. I specialize in crafting seamless user experiences using modern web technologies and frameworks.</p>
+                    <p className="font-open-sans text-sm text-[#828282] mb-3">Hello! Passionate and committed, Front-End Web Developer with extensive experience in intuitive web application development. Building fast and easy-to-use web experiences with the latest in web technologies and frameworks.</p>
 
-                    <p className="font-open-sans text-sm text-[#828282] mb-14">With a strong foundation in <strong>HTML</strong> and <strong>CSS</strong>, I build responsive and accessible web interfaces that look great on any device. My proficiency in <strong>JavaScript</strong> and frameworks like <strong>React</strong> allows me to create interactive and performant front-end applications that engage users and meet business needs. I also have a solid grasp of back-end technologies, including <strong>Node.js, Express,</strong> and <strong>MongoDB</strong>. This full-stack knowledge enables me to develop and maintain robust server-side logic, ensuring smooth communication between the front-end and back-end of applications.</p>
+                    <p className="font-open-sans text-sm text-[#828282] mb-14">Responsive, Accessible Web interfaces that look great on any device with HTML, and CSS. I build front-end apps that bring users and businesses together, with advanced leveraging of JavaScript and React. I am also very well versed with back-end technologies like Node., Express, MongoDB With a strong understanding of full-stack, I am capable to create maintainable server side logic that can connect client side and server side aspects of programs efficiently.</p>
 
                     <table className="font-open-sans text-[#111111]">
                         <tr>
@@ -43,6 +43,8 @@ const About = () => {
                             <td className="font-semibold">+8801630989742</td>
                         </tr>
                     </table>
+
+                    <button className="btn bg-[#444444] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#444444]">Download CV</button>
                 </div>
             </div>
         </Element>
