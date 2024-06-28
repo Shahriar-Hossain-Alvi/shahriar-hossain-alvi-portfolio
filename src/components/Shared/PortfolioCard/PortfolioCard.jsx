@@ -7,7 +7,7 @@ const PortfolioCard = ({ singleProject }) => {
     return (
         <div>
             <div className="h-48 w-full overflow-hidden mx-auto">
-                <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-1000 hover:object-bottom" src={home_page_image} alt="" />
+                <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-[3s] hover:object-bottom" src={home_page_image} alt="" />
             </div>
 
             <div className='py-3 px-1'>

@@ -10,7 +10,7 @@ const Portfolio = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost:5000/projects')
+        axios.get('https://md-shahriar-hossain-alvi-server.vercel.app/projects')
             .then(res => {
                 setAllProjects(res.data);
                 setLoading(false);
@@ -26,10 +26,8 @@ const Portfolio = () => {
         </div>
     }
 
-    console.log(allProjects);
-
     return (
-        <div id="portfolio" className="mb-28">
+        <div id="portfolio" className="mb-28 mx-2">
             <SectionTitle title={'My Projects'}></SectionTitle>
 
             <h2 className="text-center text-xl font-semibold mb-8">Here are some of my latest projects</h2>
