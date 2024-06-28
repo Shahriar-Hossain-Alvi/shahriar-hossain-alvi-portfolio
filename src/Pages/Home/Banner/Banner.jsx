@@ -15,7 +15,7 @@ const Banner = () => {
                 </div>
 
 
-                <img className="lg:w-36 lg:h-36 w-32 mb-2 h-32 border-4 rounded-full absolute left-1/2 -translate-x-1/2 -bottom-1/4 lg:-bottom-1/4 border-[#B4B4B4]" src={userImage} alt="" />
+                <img className="lg:w-36 lg:h-36 w-32 mb-2 h-32 border-4 rounded-full absolute left-1/2 -translate-x-1/2 -bottom-1/4 lg:-bottom-1/4 border-[#B4B4B4] object-cover" src={userImage} alt="" />
             </div>
             <div className="absolute -bottom-28 space-x-5">
                 <Link

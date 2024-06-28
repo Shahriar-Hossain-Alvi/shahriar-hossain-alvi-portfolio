@@ -1,14 +1,14 @@
-#navbar a{
+#navbarLinks a{
     background-color: transparent;
     color: #111111;
     position: relative;
 }
 
-#navbar a:hover{
+#navbarLinks a:hover{
     color: #f8a305;
 }
 
-#navbar a:after{
+#navbarLinks a:after{
     width: 0;
     height: 1px;
     background-color: #111111;
@@ -17,7 +17,7 @@
     position: absolute;
     content: '';
 }
-#navbar a:hover:after{
+#navbarLinks a:hover:after{
     width: 70%;
     bottom: 0;
     left: 0;
@@ -25,11 +25,11 @@
     transition: linear 0.1s;
 }
 
-#navbar a.active{
+#navbarLinks a.active{
     background-color: transparent;
     color: #111111;
 }
-#navbar a.active::after{
+#navbarLinks a.active::after{
     width: 70%;
     height: 1px;
     background-color: #111111;

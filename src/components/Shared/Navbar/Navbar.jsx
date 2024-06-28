@@ -2,8 +2,26 @@ import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import logo from "../../../assets/images/logo.png"
 import { Link as ScrollLink } from 'react-scroll';
+import { useEffect } from "react";
 
 const Navbar = () => {
+    const toggleNavbarColor = () => {
+        if (window.scrollY > 450) {
+            document.getElementById('navbar').classList.add('bg-gray-50')
+        }
+        else {
+            document.getElementById('navbar').classList.remove('bg-gray-50')
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleNavbarColor);
+        return () => {
+            window.removeEventListener('scroll', toggleNavbarColor);
+        }
+    }, [])
+
+
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
 
@@ -17,7 +35,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar fixed z-50">
+        <div id="navbar" className="navbar fixed z-50">
             <div className="navbar-start">
                 <Link to='/'>
                     <button className="btn bg-transparent h-16 border-none hover:bg-transparent shadow-none">
@@ -26,7 +44,7 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <div id="navbar" className="navbar-end">
+            <div id="navbarLinks" className="navbar-end">
                 <div className="hidden lg:flex">
                     <ul className="text-left flex px-1 justify-between gap-5 font-medium">
                         {navLinks}
