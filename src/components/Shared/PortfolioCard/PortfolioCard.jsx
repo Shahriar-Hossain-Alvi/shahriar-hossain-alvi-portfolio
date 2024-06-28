@@ -5,16 +5,17 @@ const PortfolioCard = ({ singleProject }) => {
     const { codeLink, liveLink, projectDetails, home_page_image, projectName } = singleProject;
 
     return (
-        <div>
-            <div className="h-48 w-full overflow-hidden mx-auto">
-                <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-[3s] hover:object-bottom" src={home_page_image} alt="" />
+        <div className='shadow-xl rounded-xl bg-[#ff7f7f7] pb-5'>
+            <div className="h-48 w-full overflow-hidden mx-auto rounded-t-xl">
+                <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-[3s] hover:object-bottom rounded-t-xl" src={home_page_image} alt="" />
             </div>
 
-            <div className='py-3 px-1'>
+            <div className='py-3 px-3'>
                 <h2 className='text-2xl font-bold'>{projectName}</h2>
                 <p className='font-medium my-2 font-open-sans'>{projectDetails.description}</p>
+                
                 <div>
-                    <h4>Technologies Used</h4>
+                    <h4 className='text-lg font-semibold underline mb-2'>Technologies Used:</h4>
                     <ul className='list-disc list-inside grid grid-cols-2'>
                         {
                             projectDetails.technologiesUsed.map((tech, index) => <li key={index}>{tech}</li>)
