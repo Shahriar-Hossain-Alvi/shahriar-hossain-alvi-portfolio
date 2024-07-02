@@ -40,9 +40,9 @@ const Home = () => {
 
             <Banner></Banner>
             <About></About>
-            <Qualification></Qualification>
-            <Portfolio></Portfolio>
             <Skills></Skills>
+            <Portfolio></Portfolio>
+            <Qualification></Qualification>
             <Contact></Contact>
         </div>
     );

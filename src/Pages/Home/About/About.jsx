@@ -15,9 +15,9 @@ const About = () => {
                 </div>
 
                 <div className="w-full">
-                    <p className="font-open-sans text-sm text-[#828282] mb-3">Hello! Passionate and committed, Front-End Web Developer with experience in web application development. Building fast and easy-to-use web experiences with the latest in web technologies and frameworks.</p>
+                    <p className="font-open-sans text-sm text-[#828282] mb-3">Hello! I am a deeply involved and committed Front-End Web Developer with experience in web application development. Develop at ease, fast web experiences using the latest in web technologies and frameworks.</p>
 
-                    <p className="font-open-sans text-sm text-[#828282] mb-14">Responsive, Accessible Web interfaces that look great on any device with HTML, and CSS. I build front-end apps that bring users and businesses together, with advanced leveraging of JavaScript and React. I am also very well versed with back-end technologies like Node., Express, MongoDB With a strong understanding of full-stack, I am capable to create maintainable server side logic that can connect client side and server side aspects of programs efficiently.</p>
+                    <p className="font-open-sans text-sm text-[#828282] mb-14">I can create Responsive, Accessible Web interfaces that look great on any device with HTML, and CSS. I build front-end web apps that bring users and businesses together, with advanced leveraging of JavaScript and React. Besides, I have very sound knowledge regarding back-end technologies like Node, Express, and MongoDB. I can create maintainable server side logic that can connect client side and server side aspects of programs efficiently.</p>
 
                     <table className="font-open-sans text-[#111111]">
                         <tbody>
@@ -41,8 +41,8 @@ const About = () => {
                         </tbody>
                     </table>
 
-                    <Link to="https://drive.google.com/file/d/1315GCZBzW-nvderWfWD1a3k8W00O56EU/view?usp=sharing">
-                        <button className="btn bg-[#444444] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#444444]">Download CV</button>
+                    <Link to="https://drive.google.com/file/d/1315GCZBzW-nvderWfWD1a3k8W00O56EU/view?usp=sharing" target="_blank">
+                        <button className="btn bg-[#444444] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#444444]">Download Resume</button>
                     </Link>
                 </div>
             </div>

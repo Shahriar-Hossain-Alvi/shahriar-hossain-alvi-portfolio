@@ -72,7 +72,6 @@ const PortfolioCard = ({ singleProject }) => {
                     </Link>
                 </div>
 
-
                 <div className='flex flex-col gap-2'>
                     <h2>Github Code Link</h2>
                     <Link target='_blank' to={codeLink.client_side_code} className="px-5 py-2 rounded-xl bg-[#444444] text-white hover:bg-transparent hover:text-[#444444] border border-[#444444] text-center">

@@ -21,7 +21,6 @@ const Navbar = () => {
         }
     }, [])
 
-
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
 
@@ -35,7 +34,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div id="navbar" className="navbar fixed z-50">
+        <div id="navbar" className="navbar fixed z-50 max-w-[1440px]">
             <div className="navbar-start">
                 <Link to='/'>
                     <button className="btn bg-transparent h-16 border-none hover:bg-transparent shadow-none">
