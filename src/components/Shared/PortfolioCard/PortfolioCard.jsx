@@ -15,14 +15,14 @@ const PortfolioCard = ({ singleProject }) => {
     }
 
     return (
-        <div className='shadow-xl rounded-xl bg-[#ff7f7f7] pb-5'>
+        <div className='shadow-xl rounded-xl pb-5'>
             <div className="h-72 w-full overflow-hidden mx-auto rounded-t-xl shadow-xl mb-5">
                 <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-[3s] hover:object-bottom rounded-t-xl" src={home_page_image} alt="" />
             </div>
 
             <div className='py-3 px-3'>
-                <h2 className='text-2xl font-bold'>{projectName}</h2>
-                <div className='font-medium my-2 font-open-sans'>
+                <h2 className='text-2xl font-black text-[#080808]'>{projectName}</h2>
+                <div className='font-medium my-2 font-open-sans text-[#5e5e5e]'>
                     {
                         projectDetails.description.length <= 350
                             ?
@@ -51,8 +51,8 @@ const PortfolioCard = ({ singleProject }) => {
                 </div>
 
                 <div>
-                    <h4 className='text-lg font-semibold underline mb-2'>Technologies Used:</h4>
-                    <ul className='list-disc list-inside grid grid-cols-2'>
+                    <h4 className='text-xl font-semibold underline mb-2 text-[#080808]'>Technologies Used:</h4>
+                    <ul className='list-disc list-inside grid grid-cols-2 font-medium text-[#080808]'>
                         {
                             projectDetails.technologiesUsed.map((tech, index) => <li key={index}>{tech}</li>)
                         }
@@ -62,23 +62,23 @@ const PortfolioCard = ({ singleProject }) => {
 
             <div className='grid grid-cols-2 gap-3 px-2'>
                 <div className='flex flex-col gap-2'>
-                    <h2>Live Link</h2>
-                    <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#444444] text-white hover:bg-transparent hover:text-[#444444] border border-[#444444] text-center">
+                    <h2 className='text-lg font-semibold text-[#080808]'>Live Link</h2>
+                    <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
                         Live 1
                     </Link>
 
-                    <Link target='_blank' to={liveLink[0]} className="rounded-xl px-5 py-2 bg-[#444444] text-white hover:bg-transparent hover:text-[#444444] border border-[#444444] text-center">
+                    <Link target='_blank' to={liveLink[0]} className="rounded-xl px-5 py-2 bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
                         Live 2
                     </Link>
                 </div>
 
                 <div className='flex flex-col gap-2'>
-                    <h2>Github Code Link</h2>
-                    <Link target='_blank' to={codeLink.client_side_code} className="px-5 py-2 rounded-xl bg-[#444444] text-white hover:bg-transparent hover:text-[#444444] border border-[#444444] text-center">
+                    <h2 className='text-lg font-semibold text-[#080808]'>Github Code Link</h2>
+                    <Link target='_blank' to={codeLink.client_side_code} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
                         Frontend
                     </Link>
 
-                    <Link target='_blank' to={codeLink.server_side_code} className="px-5 py-2 w-full rounded-xl bg-[#444444] text-white hover:bg-transparent hover:text-[#444444] border border-[#444444] text-center">
+                    <Link target='_blank' to={codeLink.server_side_code} className="px-5 py-2 w-full rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
                         Backend
                     </Link>
                 </div>

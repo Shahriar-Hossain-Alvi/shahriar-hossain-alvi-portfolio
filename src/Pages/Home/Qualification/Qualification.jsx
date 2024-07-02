@@ -22,7 +22,7 @@ const Qualification = () => {
                     </div>
                     <div className="timeline-start mb-2 md:text-end hover:shadow-lg transition ease-linear p-2 bg-[#f1f1f1] min-w-64">
                         <time className="font-mono italic">2020 - running</time>
-                        <div className="text-lg font-black">B.S.C (CSE)</div>
+                        <div className="text-lg font-black text-[#080808]">B.S.C (CSE)</div>
                         <h2 className="font-semibold font-open-sans text-sm">National University Bangladesh</h2>
                         <h4 className="font-semibold font-open-sans text-sm">CGPA: --</h4>
                     </div>
@@ -45,7 +45,7 @@ const Qualification = () => {
                     </div>
                     <div className="timeline-end mb-2 hover:shadow-lg transition ease-linear p-2 bg-[#f1f1f1] min-w-64">
                         <time className="font-mono italic">2020</time>
-                        <div className="text-lg font-black">H.S.C (Science)</div>
+                        <div className="text-lg font-black text-[#080808]">H.S.C (Science)</div>
                         <h2 className="font-semibold font-open-sans text-sm">St. Gregory's Hign School & College</h2>
                         <h4 className="font-semibold font-open-sans text-sm">GPA: 5.00</h4>
                     </div>
@@ -68,7 +68,7 @@ const Qualification = () => {
                     </div>
                     <div className="timeline-start mb-2 md:text-end hover:shadow-lg transition ease-linear p-2 bg-[#f1f1f1] min-w-64">
                         <time className="font-mono italic">2018</time>
-                        <div className="text-lg font-black">S.S.C (Science)</div>
+                        <div className="text-lg font-black text-[#080808]">S.S.C (Science)</div>
                         <h2 className="font-semibold font-open-sans text-sm">Dhaka Collegiate School</h2>
                         <h4 className="font-semibold font-open-sans text-sm">GPA: 5.00</h4>
                     </div>

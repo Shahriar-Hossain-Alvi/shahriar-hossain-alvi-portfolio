@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
-        <div id='contact' className='bg-[#444444] text-white py-12'>
+        <div id='contact' className='bg-[#eeeeee8c] text-[#080808] py-12'>
             <div className='text-center mb-5'>
                 <h2 className='text-[40px]'>Contact with Me</h2>
                 <img className='mx-auto w-36' src={sectionTitleDesign2} alt="" />

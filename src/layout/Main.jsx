@@ -5,7 +5,7 @@ import Footer from '../components/Shared/Footer/Footer';
 const Main = () => {
 
     return (
-        <div className='font-raleway'>
+        <div className='font-raleway bg-gray-50'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
