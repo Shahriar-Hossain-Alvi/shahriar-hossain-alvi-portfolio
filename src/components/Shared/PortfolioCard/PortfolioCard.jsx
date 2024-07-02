@@ -1,8 +1,18 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const PortfolioCard = ({ singleProject }) => {
     const { codeLink, liveLink, projectDetails, home_page_image, projectName } = singleProject;
+
+    const [isSliced, setIsSliced] = useState(true);
+
+    const handleSeeMore = () => {
+        setIsSliced(false)
+    }
+    const handleSeeLess = () => {
+        setIsSliced(true)
+    }
 
     return (
         <div className='shadow-xl rounded-xl bg-[#ff7f7f7] pb-5'>
@@ -12,7 +22,33 @@ const PortfolioCard = ({ singleProject }) => {
 
             <div className='py-3 px-3'>
                 <h2 className='text-2xl font-bold'>{projectName}</h2>
-                <p className='font-medium my-2 font-open-sans'>{projectDetails.description}</p>
+                <div className='font-medium my-2 font-open-sans'>
+                    {
+                        projectDetails.description.length <= 350
+                            ?
+                            <p>{projectDetails.description}</p>
+                            :
+                            (
+                                <p>
+                                    {
+                                        isSliced
+                                            ?
+                                            (
+                                                <>
+                                                    {projectDetails.description.slice(0, 350)}
+                                                    <button onClick={handleSeeMore} className="btn btn-sm btn-link text-black hover:text-blue-700 p-0">...see more</button>
+                                                </>
+                                            )
+                                            :
+                                            <p>
+                                                {projectDetails.description}
+                                                <button onClick={handleSeeLess} className="btn btn-sm text-white block btn-error">see less</button>
+                                            </p>
+                                    }
+                                </p>
+                            )
+                    }
+                </div>
 
                 <div>
                     <h4 className='text-lg font-semibold underline mb-2'>Technologies Used:</h4>
@@ -48,7 +84,7 @@ const PortfolioCard = ({ singleProject }) => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
