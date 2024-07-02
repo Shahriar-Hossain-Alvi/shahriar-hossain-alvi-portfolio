@@ -32,7 +32,7 @@ const Portfolio = () => {
 
             <h2 className="text-center text-xl font-semibold mb-8">Here are some of my latest projects</h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {
                     allProjects.map(singleProject => <PortfolioCard key={singleProject._id} singleProject={singleProject}></PortfolioCard>)
                 }
