@@ -1,16 +1,13 @@
 import { FaPhoneAlt } from 'react-icons/fa';
-import sectionTitleDesign2 from "../../../assets/images/sectionTitleDesign2.png"
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaLocationDot } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import SectionTitle from '../../../components/Shared/SectionTitle/SectionTitle';
 
 const Contact = () => {
     return (
         <div id='contact' className='bg-[#eeeeee8c] text-[#080808] py-12'>
-            <div className='text-center mb-5'>
-                <h2 className='text-[40px]'>Contact with Me</h2>
-                <img className='mx-auto w-36' src={sectionTitleDesign2} alt="" />
-            </div>
+            <SectionTitle title={'Contact with Me'}></SectionTitle>
 
             <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
                 <div className='flex items-center gap-1'>
