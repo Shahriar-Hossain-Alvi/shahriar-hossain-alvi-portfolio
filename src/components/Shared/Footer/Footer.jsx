@@ -70,7 +70,7 @@ const Footer = () => {
 
                     <ScrollLink className="cursor-pointer" to="qualification" smooth={true} duration={500}>Qualification</ScrollLink>
 
-                    <ScrollLink className="cursor-pointer" to="projects" smooth={true} duration={500}>Projects</ScrollLink>
+                    <ScrollLink className="cursor-pointer" to="portfolio" smooth={true} duration={500}>Projects</ScrollLink>
 
                     <div>
                         <Lottie

@@ -3,6 +3,8 @@ import SectionTitle from "../../../components/Shared/SectionTitle/SectionTitle";
 import aboutImage from "../../../assets/images/aboutImage.png"
 import { Element } from 'react-scroll';
 import { Link } from "react-router-dom";
+import { AwesomeButton } from "react-awesome-button";
+import 'react-awesome-button/dist/styles.css';
 
 const About = () => {
     return (
@@ -42,7 +44,7 @@ const About = () => {
                     </table>
 
                     <Link to="https://drive.google.com/file/d/1315GCZBzW-nvderWfWD1a3k8W00O56EU/view?usp=sharing" target="_blank">
-                        <button className="btn bg-[#080808] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#080808]">Download Resume</button>
+                    <button className="btn bg-[#080808] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#080808]">Download Resume</button>
                     </Link>
                 </div>
             </div>
