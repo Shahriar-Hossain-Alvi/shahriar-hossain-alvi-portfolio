@@ -3,8 +3,6 @@ import SectionTitle from "../../../components/Shared/SectionTitle/SectionTitle";
 import aboutImage from "../../../assets/images/aboutImage.png"
 import { Element } from 'react-scroll';
 import { Link } from "react-router-dom";
-import { AwesomeButton } from "react-awesome-button";
-import 'react-awesome-button/dist/styles.css';
 
 const About = () => {
     return (

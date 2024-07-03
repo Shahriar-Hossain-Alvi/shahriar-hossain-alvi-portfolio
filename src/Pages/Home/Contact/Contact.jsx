@@ -14,21 +14,21 @@ const Contact = () => {
                     <div className='border w-7 h-7 flex items-center justify-center rounded-full bg-white'>
                         <FaPhoneAlt className='text-[#444444]' />
                     </div>
-                    <h2 className='text-xl font-semibold font-open-sans'> +8801630989742</h2>
+                    <h2 className='md:text-xl font-semibold font-open-sans'> +8801630989742</h2>
                 </div>
 
                 <div className=' flex items-center gap-1'>
                     <div className='border rounded-full bg-white w-7 h-7 flex items-center justify-center'>
                         <MdEmail className='text-[#444444]' />
                     </div>
-                    <h2 className='text-xl font-semibold font-open-sans'> shahriarhossainalvi@gmail.com</h2>
+                    <h2 className='md:text-xl font-semibold font-open-sans'> shahriarhossainalvi@gmail.com</h2>
                 </div>
 
                 <div className='flex items-center gap-1'>
                     <div className='border rounded-full bg-white w-7 h-7 flex items-center justify-center'>
                         <FaLocationDot className='text-[#444444]' />
                     </div>
-                    <h2 className='text-xl font-semibold font-open-sans'>Dhaka</h2>
+                    <h2 className='md:text-xl font-semibold font-open-sans'>Dhaka</h2>
                 </div>
             </div>
 
