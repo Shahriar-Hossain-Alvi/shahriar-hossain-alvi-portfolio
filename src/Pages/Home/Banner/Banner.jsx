@@ -32,7 +32,7 @@ const Banner = () => {
                 </Link>
                 <Link
                     target="_blank"
-                    to="www.linkedin.com/in/md-shahriar-hossain-alvi"
+                    to="https://www.linkedin.com/in/md-shahriar-hossain-alvi"
                     className="relative bottom-4">
                     <button className="btn btn-circle bg-transparent hover:bg-[#0A66C2] hover:text-white border-[#5e5e5e]"><FaLinkedinIn /></button>
                 </Link>
