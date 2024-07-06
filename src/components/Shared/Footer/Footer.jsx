@@ -132,7 +132,8 @@ const Footer = () => {
                 </div>
 
                 <div className='w-full lg:w-4/12'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d467381.75198048924!2d90.38908044212256!3d23.76805602938266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1720014027530!5m2!1sen!2sbd" width="100%" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <h6 className="footer-title">Location</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.4993019684!2d90.25487284317997!3d23.781067239145404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1720261578242!5m2!1sen!2sbd" width="100%" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
