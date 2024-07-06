@@ -11,7 +11,7 @@ const Skills = () => {
             <SectionTitle title={'My Skills'}></SectionTitle>
 
             <div className='flex justify-evenly items-center gap-5 flex-wrap overflow-x-hidden'>
-                <Slide>
+                <Slide triggerOnce={true}>
                     <button className="btn hover:bg-[#fc4f13] lg:btn-lg bg-[#fc4f13] text-white">
                         <FaHtml5 className='text-xl' /> HTML
                     </button>
@@ -33,7 +33,7 @@ const Skills = () => {
                     </button>
                 </Slide>
 
-                <Slide direction='right'>
+                <Slide triggerOnce={true} direction='right'>
                     <button className="btn hover:bg-[#393939] lg:btn-lg bg-[#393939] text-[#8fc708]">
                         <FaNodeJs className='text-xl' /> NodeJS
                     </button>

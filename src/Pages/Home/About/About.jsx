@@ -11,13 +11,13 @@ const About = () => {
             <SectionTitle title={'About Me'}></SectionTitle>
 
             <div className="grid md:grid-cols-2 gap-10 items-center overflow-x-hidden">
-                <Slide>
+                <Slide triggerOnce={true}>
                     <div className="flex justify-center md:justify-end w-full">
                         <img className="rounded-b-[250px] md:rounded-bl-[250px] max-h-[500px] pb-1 pl-1 border-b-2 border-[#080808]" src={aboutImage} alt="about image" />
                     </div>
                 </Slide>
 
-                <Slide direction="right">
+                <Slide triggerOnce={true} direction="right">
                     <div className="w-full">
                         <p className="font-open-sans text-sm text-[#080808] mb-3">Hello! I am a deeply involved and committed Front-End Web Developer with experience in web application development. Develop at ease, fast web experiences using the latest in web technologies and frameworks.</p>
 
