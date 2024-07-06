@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PortfolioCard from "../../../components/Shared/PortfolioCard/PortfolioCard";
 import SectionTitle from "../../../components/Shared/SectionTitle/SectionTitle";
 import axios from "axios";
+import { Zoom } from "react-awesome-reveal";
 
 
 const Portfolio = () => {
@@ -33,9 +34,11 @@ const Portfolio = () => {
             <h2 className="text-center text-xl font-semibold mb-8">Here are some of my latest projects</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                {
-                    allProjects.map(singleProject => <PortfolioCard key={singleProject._id} singleProject={singleProject}></PortfolioCard>)
-                }
+                <Zoom>
+                    {
+                        allProjects.map(singleProject => <PortfolioCard key={singleProject._id} singleProject={singleProject}></PortfolioCard>)
+                    }
+                </Zoom>
             </div>
         </div>
     );

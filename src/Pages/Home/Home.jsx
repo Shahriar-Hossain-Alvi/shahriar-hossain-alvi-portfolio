@@ -8,7 +8,6 @@ import Portfolio from "./Portfolio/Portfolio";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 
-
 const Home = () => {
     const [isVisible, setIsVisible] = useState(false);
 
