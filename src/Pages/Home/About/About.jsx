@@ -45,7 +45,7 @@ const About = () => {
                             </tbody>
                         </table>
 
-                        <Link to="https://drive.google.com/file/d/1315GCZBzW-nvderWfWD1a3k8W00O56EU/view?usp=sharing" target="_blank">
+                        <Link to="https://drive.google.com/file/d/1GlHZlI8SNE3mifZmmIn_QevlHDCQv1q1/view?usp=sharing" target="_blank">
                             <button className="btn bg-[#080808] text-white rounded-none mt-4 hover:bg-transparent hover:text-[#444444] hover:border-[#080808]">Download Resume</button>
                         </Link>
                     </div>

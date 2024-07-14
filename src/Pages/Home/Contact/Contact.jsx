@@ -10,7 +10,7 @@ const Contact = () => {
         <div id='contact' className='bg-[#eeeeee8c] text-[#080808] py-12'>
             <SectionTitle title={'Contact with Me'}></SectionTitle>
 
-            <Fade>
+            <Fade triggerOnce={true}>
                 <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
                     <div className='flex items-center gap-1'>
                         <div className='border w-7 h-7 flex items-center justify-center rounded-full bg-white'>
