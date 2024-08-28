@@ -3,7 +3,7 @@ import About from "./About/About";
 import Banner from "./Banner/Banner";
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from "react";
-import Qualification from "./Qualification/Qualification";
+// import Qualification from "./Qualification/Qualification";
 import Portfolio from "./Portfolio/Portfolio";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";

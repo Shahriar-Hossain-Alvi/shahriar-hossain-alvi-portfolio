@@ -3,17 +3,18 @@ import PortfolioCard from "../../../components/Shared/PortfolioCard/PortfolioCar
 import SectionTitle from "../../../components/Shared/SectionTitle/SectionTitle";
 import axios from "axios";
 import { Zoom } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
-    const [allProjects, setAllProjects] = useState([]);
+    const [topProjects, setTopProjects] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         setLoading(true);
         axios.get('https://md-shahriar-hossain-alvi-server.vercel.app/projects')
             .then(res => {
-                setAllProjects(res.data);
+                setTopProjects(res.data);
                 setLoading(false);
             })
             .catch(error => {
@@ -36,9 +37,13 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <Zoom triggerOnce={true}>
                     {
-                        allProjects.map(singleProject => <PortfolioCard key={singleProject._id} singleProject={singleProject}></PortfolioCard>)
+                        topProjects.map(singleProject => <PortfolioCard key={singleProject._id} singleProject={singleProject}></PortfolioCard>)
                     }
                 </Zoom>
+            </div>
+
+            <div className="text-center mt-10">
+                <Link to="/allProjects" className="btn btn-wide bg-[#080808] text-white rounded-lg hover:bg-white hover:text-[#444444] border border-[#080808] text-center font-semibold">All Projects</Link>
             </div>
         </div>
     );
