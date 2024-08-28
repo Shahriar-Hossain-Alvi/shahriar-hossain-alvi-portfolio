@@ -15,7 +15,7 @@ const PortfolioCard = ({ singleProject }) => {
     }
 
     return (
-        <div className='shadow-xl rounded-xl pb-5'>
+        <div className='shadow-xl rounded-xl pb-5 flex flex-col h-full'>
             <div className="h-72 w-full overflow-hidden mx-auto rounded-t-xl shadow-xl mb-5">
                 <img className="w-full h-full object-cover object-top transition-all ease-in-out duration-[3s] hover:object-bottom rounded-t-xl" src={home_page_image} alt="" />
             </div>
@@ -49,18 +49,20 @@ const PortfolioCard = ({ singleProject }) => {
                             )
                     }
                 </div>
-
-                <div>
-                    <h4 className='text-xl font-semibold underline mb-2 text-[#080808]'>Technologies Used:</h4>
-                    <ul className='list-disc list-inside grid grid-cols-2 font-medium text-[#080808]'>
-                        {
-                            projectDetails.technologiesUsed.map((tech, index) => <li key={index}>{tech}</li>)
-                        }
-                    </ul>
-                </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-3 px-2'>
+            {/* technologies used */}
+            <div className='py-3 px-3'>
+                <h4 className='text-xl font-semibold underline mb-2 text-[#080808]'>Technologies Used:</h4>
+                <ul className='list-disc list-inside grid grid-cols-2 font-medium text-[#080808]'>
+                    {
+                        projectDetails.technologiesUsed.map((tech, index) => <li key={index}>{tech}</li>)
+                    }
+                </ul>
+            </div>
+
+
+            <div className='grid grid-cols-2 gap-3 px-2 pt-3'>
                 <div className='flex flex-col gap-2'>
                     <h2 className='text-lg font-semibold text-[#080808]'>Live Link</h2>
                     <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
@@ -74,6 +76,7 @@ const PortfolioCard = ({ singleProject }) => {
 
                 <div className='flex flex-col gap-2'>
                     <h2 className='text-lg font-semibold text-[#080808]'>Github Code Link</h2>
+
                     <Link target='_blank' to={codeLink.client_side_code} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
                         Frontend
                     </Link>
