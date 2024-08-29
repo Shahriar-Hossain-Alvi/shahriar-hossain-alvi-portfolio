@@ -65,13 +65,26 @@ const PortfolioCard = ({ singleProject }) => {
             <div className='grid grid-cols-2 gap-3 px-2 pt-3'>
                 <div className='flex flex-col gap-2'>
                     <h2 className='text-lg font-semibold text-[#080808]'>Live Link</h2>
-                    <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
-                        Live 1
-                    </Link>
+                    {
+                        liveLink.length === 2 &&
+                        <>
+                            <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
+                                Live 1
+                            </Link>
 
-                    <Link target='_blank' to={liveLink[0]} className="rounded-xl px-5 py-2 bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
-                        Live 2
-                    </Link>
+                            <Link target='_blank' to={liveLink[1]} className="rounded-xl px-5 py-2 bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
+                                Live 2
+                            </Link>
+                        </>
+                    }
+                    {
+                        liveLink.length === 1 &&
+                        <>
+                            <Link target='_blank' to={liveLink[0]} className="px-5 py-2 rounded-xl bg-[#080808] text-white hover:bg-transparent hover:text-[#444444] border border-[#080808] text-center font-semibold">
+                                Live
+                            </Link>
+                        </>
+                    }
                 </div>
 
                 <div className='flex flex-col gap-2'>
