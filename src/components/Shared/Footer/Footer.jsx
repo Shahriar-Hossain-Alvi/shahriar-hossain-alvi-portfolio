@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Lottie from 'react-lottie';
 import codingAnimation from "../../../assets/Animation/codingAnimation.json";
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const emailjsServiceID = 'service_7psiz7c'
 const emailjsTemplateID = 'template_eahz4jk'
@@ -83,7 +84,14 @@ const Footer = () => {
                 </div>
 
                 <div className='w-full lg:w-5/12'>
-                    <h6 className="footer-title">Send Me email</h6>
+                    <h6 className="footer-title">Send Me 
+                        {/* email */}
+
+                    <Link className='ml-1' to="https://drive.google.com/drive/folders/1e0KwFhZzZnRsuliR6gGWN9Is61wmGs5O?usp=sharing" target="_blank">
+                     email
+                    </Link>
+                    </h6>
+                    
                     <form className='w-full' onSubmit={handleSubmit}>
                         <div className='form-control'>
                             <label className='label'>
